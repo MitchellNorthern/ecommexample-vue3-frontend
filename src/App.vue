@@ -6,6 +6,19 @@
     </div>
 </template>
 
+<script>
+import AppHeader from './views/AppHeader'
+import AppFooter from './views/AppFooter'
+
+export default {
+    name: 'app',
+    components: {
+        AppHeader,
+        AppFooter
+    }
+}
+</script>
+
 <style>
 #app {
     font-family: 'Avenir', Helvetica, Arial, sans-serif;

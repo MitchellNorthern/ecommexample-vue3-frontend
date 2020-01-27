@@ -7,20 +7,23 @@
 </template>
 
 <script>
-import { ref } from 'vue'
+import { ref } from '@vue/composition-api'
 
 export default {
     setup() {
-        /* ************* */
-        /* EXAMPLE STATE */
-        /* ************* */
+        /* ******* */
+        /* COUNTER */
+        /* ******* */
         const counter = ref(0)
 
-        /* *************** */
-        /* EXAMPLE METHODS */
-        /* *************** */
         const incrementCounter = () => counter.value++
         const decrementCounter = () => counter.value--
+
+        return {
+            incrementCounter,
+            decrementCounter,
+            counter
+        }
     }
 }
 </script>
